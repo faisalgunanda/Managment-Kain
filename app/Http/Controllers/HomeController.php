@@ -25,6 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        date_default_timezone_set('Asia/Jakarta');
         $today = Carbon::now()->format('Y-m-d');
         $penjualans = DB::table('penjualans')->select('harga_jual');
         $totalmodal = DB::table('barangs')->select('modal')->get()->sum();
