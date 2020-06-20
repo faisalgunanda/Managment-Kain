@@ -1,0 +1,165 @@
+Searching 9081 files for "/home"
+
+/Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Middleware/RedirectIfAuthenticated.php:
+   19      {
+   20          if (Auth::guard($guard)->check()) {
+   21:             return redirect('/admin');
+   22          }
+   23  
+
+/Users/isall/Documents/project-belajar/Managment-Kain/public/backend/dist/js/app.js:
+ 41994  
+ 41995  __webpack_require__(/*! core-js/es/array/from */"./node_modules/core-js/es/array/from.js");
+ 41996: module.exports = __webpack_require__(/*! /home/travis/build/feathericons/feather/src/index.js */"./src/index.js");
+ 41997  
+ 41998  
+
+/Users/isall/Documents/project-belajar/Managment-Kain/public/backend/dist/js/app3860.js:
+ 41994  
+ 41995  __webpack_require__(/*! core-js/es/array/from */"./node_modules/core-js/es/array/from.js");
+ 41996: module.exports = __webpack_require__(/*! /home/travis/build/feathericons/feather/src/index.js */"./src/index.js");
+ 41997  
+ 41998  
+
+/Users/isall/Documents/project-belajar/Managment-Kain/public/backend2/app-ecommerce-details.html:
+ 1333              </div>
+ 1334              <div class="img-container w-50 mx-auto my-2 py-75">
+ 1335:               <img src="images/elements/homepod.png" class="img-fluid" alt="image">
+ 1336              </div>
+ 1337              <div class="item-meta">
+
+/Users/isall/Documents/project-belajar/Managment-Kain/storage/logs/laravel-2020-06-19.log:
+   81  #26 {main}
+   82  "} 
+   83: [2020-06-19 11:20:56] local.ERROR: syntax error, unexpected 'Carbon' (T_STRING) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected 'Carbon' (T_STRING) at /Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Controllers/HomeController.php:7)
+   84  [stacktrace]
+   85  #0 /Users/isall/Documents/project-belajar/Managment-Kain/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile('/Users/isall/Do...')
+   ..
+  122  #37 {main}
+  123  "} 
+  124: [2020-06-19 11:21:37] local.ERROR: Undefined variable: data_hari_ini {"userId":1,"exception":"[object] (ErrorException(code: 0): Undefined variable: data_hari_ini at /Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Controllers/HomeController.php:34)
+  125  [stacktrace]
+  126: #0 /Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Controllers/HomeController.php(34): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', '/Users/isall/Do...', 34, Array)
+  127  #1 [internal function]: App\\Http\\Controllers\\HomeController->index()
+  128  #2 /Users/isall/Documents/project-belajar/Managment-Kain/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): call_user_func_array(Array, Array)
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/composer/autoload_classmap.php:
+   15      'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
+   16      'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+   17:     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+   18      'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
+   19      'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/composer/autoload_static.php:
+  539          'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+  540          'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+  541:         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+  542          'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+  543          'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/fzaninotto/faker/.travis/xdebug.sh:
+    8  # - https://docs.travis-ci.com/user/languages/php#Custom-PHP-configuration
+    9  
+   10: config="/home/travis/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini"
+   11  
+   12  function xdebug-disable() {
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/fzaninotto/faker/src/Faker/Provider/fr_CH/Person.php:
+   95       * as a formatted string.
+   96       *
+   97:      * @see https://www.zas.admin.ch/zas/fr/home/partenaires-et-institutions-/navs13.html
+   98       * @return string
+   99       */
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/laravel/framework/src/Illuminate/Auth/Console/AuthMakeCommand.php:
+   54          if (! $this->option('views')) {
+   55              file_put_contents(
+   56:                 app_path('Http/Controllers/HomeController.php'),
+   57                  $this->compileControllerStub()
+   58              );
+   ..
+  115              '{{namespace}}',
+  116              $this->getAppNamespace(),
+  117:             file_get_contents(__DIR__.'/stubs/make/controllers/HomeController.stub')
+  118          );
+  119      }
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/laravel/framework/src/Illuminate/Auth/Console/stubs/make/routes.stub:
+    2  Auth::routes();
+    3  
+    4: Route::get('/home', 'HomeController@index')->name('home');
+    5  
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php:
+   16          }
+   17  
+   18:         return property_exists($this, 'redirectTo') ? $this->redirectTo : '/admin';
+   19      }
+   20  }
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/maatwebsite/excel/README.md:
+   19    <a href="https://github.com/Maatwebsite/Laravel-Nova-Excel">Nova</a>
+   20    <span> · </span>
+   21:   <a href="https://medium.com/maatwebsite/laravel-excel/home">Blog</a>
+   22    <span> · </span>
+   23    <a href="https://docs.laravel-excel.com/3.1/getting-started/contributing.html">Contributing</a>
+   ..
+   67  We welcome suggestions for improving our docs. The documentation repository can be found at [https://github.com/Maatwebsite/laravel-excel-docs](https://github.com/Maatwebsite/laravel-excel-docs).
+   68  
+   69: Some articles and tutorials can be found on our blog: https://medium.com/maatwebsite/laravel-excel/home
+   70  
+   71  ## 🎥 Video Course
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Statistical.php:
+  447          //    Inverse ncdf approximation by Peter J. Acklam, implementation adapted to
+  448          //    PHP by Michael Nickerson, using Dr. Thomas Ziegler's C implementation as
+  449:         //    a guide. http://home.online.no/~pjacklam/notes/invnorm/index.html
+  450          //    I have not checked the accuracy of this implementation. Be aware that PHP
+  451          //    will truncate the coeficcients to 14 digits.
+  ...
+ 2070       * @TODO    Try implementing P J Acklam's refinement algorithm for greater
+ 2071       *            accuracy if I can get my head round the mathematics
+ 2072:      *            (as described at) http://home.online.no/~pjacklam/notes/invnorm/
+ 2073       */
+ 2074      public static function LOGINV($probability, $mean, $stdDev)
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/phpunit/php-code-coverage/src/Node/Builder.php:
+  122       * Array
+  123       * (
+  124:      *     [/home/sb/Money/Money.php] => Array
+  125       *         (
+  126       *             ...
+  127       *         )
+  128       *
+  129:      *     [/home/sb/Money/MoneyBag.php] => Array
+  130       *         (
+  131       *             ...
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/psy/psysh/README.md:
+    1  # PsySH
+    2  
+    3: PsySH is a runtime developer console, interactive debugger and [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) for PHP. Learn more at [psysh.org](http://psysh.org/) and [in the manual](https://github.com/bobthecow/psysh/wiki/Home).
+    4  
+    5  
+    .
+   14  <a id="downloading-the-manual"></a>
+   15  
+   16: ## [PsySH manual](https://github.com/bobthecow/psysh/wiki/Home)
+   17  
+   18  ### [💾 Installation](https://github.com/bobthecow/psysh/wiki/Installation)
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/sebastian/exporter/README.md:
+   21      'string' => ''
+   22      'code' => 0
+   23:     'file' => '/home/sebastianbergmann/test.php'
+   24      'line' => 34
+   25      'previous' => null
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/yajra/laravel-datatables-oracle/README.md:
+  101  There are known bugs when using this where Laravel randomly returns a redirect and 401 (Unauthorized) if the route requires authentication and a 404 NotFoundHttpException on valid routes.
+  102  
+  103: It is advised to use [Homestead](https://laravel.com/docs/5.4/homestead) or [Valet](https://laravel.com/docs/5.4/valet) when working with the package.
+  104  
+  105  ## Contributing
+
+25 matches across 18 files

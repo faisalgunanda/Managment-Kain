@@ -1,0 +1,82 @@
+Searching 9082 files for "/admin"
+
+/Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Controllers/Auth/LoginController.php:
+   26       * @var string
+   27       */
+   28:     protected $redirectTo = '/home';
+   29  
+   30      /**
+
+/Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Controllers/Auth/RegisterController.php:
+   29       * @var string
+   30       */
+   31:     protected $redirectTo = '/home';
+   32  
+   33      /**
+
+/Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Controllers/Auth/ResetPasswordController.php:
+   26       * @var string
+   27       */
+   28:     protected $redirectTo = '/home';
+   29  
+   30      /**
+
+/Users/isall/Documents/project-belajar/Managment-Kain/app/Http/Controllers/Auth/VerificationController.php:
+   26       * @var string
+   27       */
+   28:     protected $redirectTo = '/home';
+   29  
+   30      /**
+
+/Users/isall/Documents/project-belajar/Managment-Kain/Modules/Barang/Resources/views/index.blade.php:
+    7              <ol class="breadcrumb">
+    8                  <li class="breadcrumb-item">
+    9:                     <a href="{{url('/home')}}"> Dashboard </a>
+   10                  </li>
+   11                  <li class="breadcrumb-item">
+
+/Users/isall/Documents/project-belajar/Managment-Kain/resources/views/Find Results:
+    4     19      {
+    5     20          if (Auth::guard($guard)->check()) {
+    6:    21:             return redirect('/home');
+    7     22          }
+    8     23  
+    .
+   94     16          }
+   95     17  
+   96:    18:         return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+   97     19      }
+   98     20  }
+
+/Users/isall/Documents/project-belajar/Managment-Kain/resources/views/partials/menu.blade.php:
+    1  <li class="nav-item ">
+    2:     <a href="{{url('/home')}}">
+    3          <i class="feather icon-home"></i>
+    4          <span class="menu-title" data-i18n="">Dashboard</span>
+
+/Users/isall/Documents/project-belajar/Managment-Kain/storage/framework/views/02c784609d36d3dad0742d431b7f6cf2927ac8a0.php:
+    6              <ol class="breadcrumb">
+    7                  <li class="breadcrumb-item">
+    8:                     <a href="<?php echo e(url('/home')); ?>"> Dashboard </a>
+    9                  </li>
+   10                  <li class="breadcrumb-item">
+
+/Users/isall/Documents/project-belajar/Managment-Kain/storage/framework/views/0934214251a78575e1f519c08298a61c63bb1a71.php:
+    1  <li class="nav-item ">
+    2:     <a href="<?php echo e(url('/home')); ?>">
+    3          <i class="feather icon-home"></i>
+    4          <span class="menu-title" data-i18n="">Dashboard</span>
+
+/Users/isall/Documents/project-belajar/Managment-Kain/storage/framework/views/31a2d07975bc83c39925b63a2400861ae08dc576.php:
+   56  <?php $__env->stopSection(); ?>
+   57  
+   58: <?php echo $__env->make('partials.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/isall/Documents/project-belajar/Managment-Kain/resources/views/admin.blade.php ENDPATH**/ ?>
+
+/Users/isall/Documents/project-belajar/Managment-Kain/vendor/fzaninotto/faker/src/Faker/Provider/nl_NL/Company.php:
+   95       * @example 'NL123456789B01'
+   96       *
+   97:      * @see http://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/administratie_bijhouden/btw_nummers_controleren/uw_btw_nummer
+   98       *
+   99       * @return string VAT Number
+
+12 matches across 11 files

@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+    
+<!-- Mirrored from pixinvent.com/demo/vuexy-bootstrap-laravel-admin-template/demo-4/form-textarea by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jun 2020 13:04:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="csrf-token" content="CX1hMBTOKNAZp1x4fEHF6ZXr7ym82j9Iyjhr3PWI">
+
+        <title>Textarea - Vuexy Vuejs, HTML & Laravel Admin Dashboard Template</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo/favicon.ico">
+
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600">
+        <link rel="stylesheet" href="vendors/css/vendors.min3440.css?id=a09a0e3f1b4a384cbbce">
+        <link rel="stylesheet" href="vendors/css/ui/prism.minf1e1.css?id=2b6ec658f3078cb5a481">
+        
+                
+        <link rel="stylesheet" href="css/bootstrap3ae5.css?id=98c1b5bba782c43d2bc3">
+        <link rel="stylesheet" href="css/bootstrap-extended5854.css?id=4534b3f019dabbf49ade">
+        <link rel="stylesheet" href="css/colors7195.css?id=a0cd3dcd259da4263102">
+        <link rel="stylesheet" href="css/componentsa26d.css?id=a24d3227c97be4ae5678">
+        <link rel="stylesheet" href="css/themes/dark-layout33bd.css?id=9bb62817ffd3425a9f65">
+        <link rel="stylesheet" href="css/themes/semi-dark-layout39e1.css?id=a01d87d1930befd3f900">
+
+
+
+
+
+
+        <link rel="stylesheet" href="css/core/menu/menu-types/vertical-menud03a.css?id=31d588213cea00d082ab">
+        <link rel="stylesheet" href="css/core/colors/palette-gradient39bd.css?id=481306dac133dfb42a7b">
+        
+        
+        <link rel="stylesheet" href="css/custom-laravel901b.css?id=f796e995f1ed0a769668">
+
+
+    </head>
+
+    
+    
+    
+
+<body class="vertical-layout vertical-menu-modern 2-columns    semi-dark-layout  navbar-floating menu-expanded footer-static" data-menu="vertical-menu-modern" data-col="2-columns"  data-layout="semi-dark-layout">
+        
+        <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mr-auto"><a class="navbar-brand" href="dashboard-analytics.html">
+                    <div class="brand-logo"></div>
+                    <h2 class="brand-text mb-0">Vuexy</h2>
+                </a></li>
+            <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block primary collapse-toggle-icon" data-ticon="icon-disc"></i></a></li>
+        </ul>
+    </div>
+    <div class="shadow-bottom"></div>
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            
+                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-home"></i>
+                            <span class="menu-title" data-i18n="">Dashboard</span>
+                                                                                            <span class="badge badge-warning badge-pill float-right mr-2 test ">2</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="dashboard-analytics.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Analytics</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="dashboard-ecommerce.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">eCommerce</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                                <li class="navigation-header">
+                        <span>Apps</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="app-email.html">
+                            <i class="feather icon-mail"></i>
+                            <span class="menu-title" data-i18n="nav.app_email">Email</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="app-chat.html">
+                            <i class="feather icon-message-square"></i>
+                            <span class="menu-title" data-i18n="nav.app_chat">Chat</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="app-todo.html">
+                            <i class="feather icon-check-square"></i>
+                            <span class="menu-title" data-i18n="nav.app_todo">Todo</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="app-calender.html">
+                            <i class="feather icon-calendar"></i>
+                            <span class="menu-title" data-i18n="nav.app_calender">Calender</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-shopping-cart"></i>
+                            <span class="menu-title" data-i18n="">Ecommerce</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="app-ecommerce-shop.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Shop</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="app-ecommerce-details.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Details</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="app-ecommerce-wishlist.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Wish List</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="app-ecommerce-checkout.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Checkout</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-unlock"></i>
+                            <span class="menu-title" data-i18n="">User</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="app-user-list.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">List</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="app-user-view.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">View</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="app-user-edit.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Edit</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                                <li class="navigation-header">
+                        <span>UI Elements</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-list"></i>
+                            <span class="menu-title" data-i18n="">Data List</span>
+                                                                                            <span class="badge badge-primary badge-pill float-right mr-2 test ">New</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="data-list-view.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">List View</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="data-thumb-view.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Thumb View</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-layout"></i>
+                            <span class="menu-title" data-i18n="">Content</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="content-grid.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Grid</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="content-typography.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Typography</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="content-text-utilities.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Text Utilities</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="content-syntax-highlighter.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Syntax Highlighter</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="content-helper-classes.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Helper Classes</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="colors.html">
+                            <i class="feather icon-droplet"></i>
+                            <span class="menu-title" data-i18n="nav.colors">Colors</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-eye"></i>
+                            <span class="menu-title" data-i18n="">Icons</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="icons-feather.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Feather</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="icons-font-awesome.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Font Awesome</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-credit-card"></i>
+                            <span class="menu-title" data-i18n="">Cards</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="card-basic.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Basic</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="card-advance.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Advance</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="card-statistics.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Statistics</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="card-analytics.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Analytics</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="card-actions.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Card Actions</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-briefcase"></i>
+                            <span class="menu-title" data-i18n="">Components</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="component-alert.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Alerts</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-buttons.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Buttons</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-breadcrumbs.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Breadcrumbs</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-carousel.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Carousel</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-collapse.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Collapse</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-dropdowns.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Dropdowns</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-list-group.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">List Group</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-modals.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Modal</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-pagination.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Pagination</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-navs.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Navs Component</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-navbar.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Navbar</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-tabs.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Tabs Component</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-pills.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Pills Component</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-tooltips.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Tooltips</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-popovers.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Popovers</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-badges.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Badges</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-pill-badges.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Pill Badges</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-progress.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Progress</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-media-objects.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Media Objects</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-spinner.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Spinner</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="component-toast.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Toast</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-box"></i>
+                            <span class="menu-title" data-i18n="">Extra Components</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="ex-component-avatar.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Avatar</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="ex-component-chips.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Chips</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="ex-component-divider.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Divider</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                                <li class="navigation-header">
+                        <span>Forms &amp; Tables</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-copy"></i>
+                            <span class="menu-title" data-i18n="">Form Elements</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="form-select.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Select</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="form-switch.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Switch</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="form-checkbox.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Checkbox</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="form-radio.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Radio</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="form-input.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Input</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="form-input-groups.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Input Groups</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="form-number-input.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Number Input</span>
+            </a>
+                    </li>
+                    <li class="active">
+            <a href="form-textarea.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Textarea</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="form-date-time-picker.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Date &amp; Time Picker</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="form-layout.html">
+                            <i class="feather icon-box"></i>
+                            <span class="menu-title" data-i18n="nav.form_layout">Form Layout</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="form-wizard.html">
+                            <i class="feather icon-package"></i>
+                            <span class="menu-title" data-i18n="nav.form_wizard">Form Wizard</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="form-validation.html">
+                            <i class="feather icon-check-circle"></i>
+                            <span class="menu-title" data-i18n="nav.form_validation">Form Validation</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="table.html">
+                            <i class="feather icon-server"></i>
+                            <span class="menu-title" data-i18n="nav.table">Table</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="table-datatable.html">
+                            <i class="feather icon-grid"></i>
+                            <span class="menu-title" data-i18n="nav.table_datatable">Datatable</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="table-ag-grid.html">
+                            <i class="feather icon-grid"></i>
+                            <span class="menu-title" data-i18n="nav.table_ag_grid">agGrid Table</span>
+                                                                                            <span class="badge badge-primary badge-pill float-right mr-2 test ">New</span>
+                                                    </a>
+                                            </li>
+                                                                <li class="navigation-header">
+                        <span>Pages</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="page-user-profile.html">
+                            <i class="feather icon-user"></i>
+                            <span class="menu-title" data-i18n="nav.page_user_profile">Profile</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="page-account-settings.html">
+                            <i class="feather icon-settings"></i>
+                            <span class="menu-title" data-i18n="nav.page_account_settings">Account Settings</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="page-faq.html">
+                            <i class="feather icon-help-circle"></i>
+                            <span class="menu-title" data-i18n="nav.page_faq">FAQ</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="page-knowledge-base.html">
+                            <i class="feather icon-info"></i>
+                            <span class="menu-title" data-i18n="nav.page_knowledge_base">Knowledge Base</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="page-search.html">
+                            <i class="feather icon-search"></i>
+                            <span class="menu-title" data-i18n="nav.page_search">Search</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="page-invoice.html">
+                            <i class="feather icon-file"></i>
+                            <span class="menu-title" data-i18n="nav.page_invoice">Invoice</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-unlock"></i>
+                            <span class="menu-title" data-i18n="">Authentication</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="auth-login.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Login</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="auth-register.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Register</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="auth-forgot-password.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Forgot Password</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="auth-reset-password.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Reset Password</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="auth-lock-screen.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Lock Screen</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-unlock"></i>
+                            <span class="menu-title" data-i18n="">Miscellaneous</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="page-coming-soon.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Coming Soon</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="#">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Error</span>
+            </a>
+                            <ul class="menu-content">
+                    <li class="">
+            <a href="error-404.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">404</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="error-500.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">500</span>
+            </a>
+                    </li>
+    </ul>                    </li>
+                    <li class="">
+            <a href="page-not-authorized.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Not Authorized</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="page-maintenance.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Maintenance</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                                <li class="navigation-header">
+                        <span>Charts &amp; Maps</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-pie-chart"></i>
+                            <span class="menu-title" data-i18n="">Charts</span>
+                                                                                            <span class="badge badge-pill badge-success float-right mr-2 test ">3</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="chart-apex.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Apex</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="chart-chartjs.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Chartjs</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="chart-echarts.html">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Echarts</span>
+            </a>
+                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="maps-google.html">
+                            <i class="feather icon-map"></i>
+                            <span class="menu-title" data-i18n="nav.maps_google">Google Maps</span>
+                                                    </a>
+                                            </li>
+                                                                <li class="navigation-header">
+                        <span>Extensions</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-sweet-alerts.html">
+                            <i class="feather icon-alert-circle"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_sweet_alerts">Sweet Alert</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-toastr.html">
+                            <i class="feather icon-zap"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_toastr">Toastr</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-noui-slider.html">
+                            <i class="feather icon-sliders"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_noui_slider">NoUi Slider</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-file-uploader.html">
+                            <i class="feather icon-upload-cloud"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_file_uploader">File Uploader</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-quill-editor.html">
+                            <i class="feather icon-edit"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_quill_editor">Quill Editor</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-drag-drop.html">
+                            <i class="feather icon-droplet"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_drag_drop">Drag &amp; Drop</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-tour.html">
+                            <i class="feather icon-info"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_tour">Tour</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-clipboard.html">
+                            <i class="feather icon-copy"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_clipboard">Clipboard</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-plyr.html">
+                            <i class="feather icon-film"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_plyr">Media Player</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-context-menu.html">
+                            <i class="feather icon-more-horizontal"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_context_menu">Context Menu</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-swiper.html">
+                            <i class="feather icon-smartphone"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_swiper">Swiper</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="ext-component-i18n.html">
+                            <i class="feather icon-globe"></i>
+                            <span class="menu-title" data-i18n="nav.ext_component_i18n">I18n</span>
+                                                    </a>
+                                            </li>
+                                                                <li class="navigation-header">
+                        <span>Others</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="#">
+                            <i class="feather icon-menu"></i>
+                            <span class="menu-title" data-i18n="">Menu Levels</span>
+                                                    </a>
+                                                    <ul class="menu-content">
+                    <li class="">
+            <a href="#">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Second Level</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="#">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Second Level</span>
+            </a>
+                            <ul class="menu-content">
+                    <li class="">
+            <a href="#">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Third Level</span>
+            </a>
+                    </li>
+                    <li class="">
+            <a href="#">
+                <i class="feather icon-circle"></i>
+                <span class="menu-title" data-i18n="">Third Level</span>
+            </a>
+                    </li>
+    </ul>                    </li>
+    </ul>                                            </li>
+                                                              
+                                    <li class="nav-item  disabled">
+                        <a href="#">
+                            <i class="feather icon-eye-off"></i>
+                            <span class="menu-title" data-i18n="">Disabled Menu</span>
+                                                    </a>
+                                            </li>
+                                                                <li class="navigation-header">
+                        <span>Support</span>
+                    </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation/documentation-laravel.html">
+                            <i class="feather icon-folder"></i>
+                            <span class="menu-title" data-i18n="nav.documentation">Documentation</span>
+                                                    </a>
+                                            </li>
+                                                              
+                                    <li class="nav-item  ">
+                        <a href="https://pixinvent.ticksy.com/">
+                            <i class="feather icon-life-buoy"></i>
+                            <span class="menu-title" data-i18n="nav.raise_support">Raise Support</span>
+                                                    </a>
+                                            </li>
+                                        
+        </ul>
+    </div>
+</div>
+<!-- END: Main Menu-->
+
+        <!-- BEGIN: Content-->
+        <div class="app-content content">
+            <!-- BEGIN: Header-->
+            <div class="content-overlay"></div>
+            <div class="header-navbar-shadow"></div>
+
+            
+            <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow ">
+      <div class="navbar-wrapper">
+        <div class="navbar-container content">
+            <div class="navbar-collapse" id="navbar-mobile">
+                <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav bookmark-icons">
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-toggle="tooltip" data-placement="top" title="Email"><i class="ficon feather icon-mail"></i></a></li>
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calender.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon feather icon-calendar"></i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a>
+                            <div class="bookmark-input search-input">
+                                <div class="bookmark-input-icon"><i class="feather icon-search primary"></i></div>
+                                <input class="form-control input" type="text" placeholder="Explore Vuexy..." tabindex="0" data-search="laravel-search-list" />
+                                <ul class="search-list search-list-bookmark"></ul>
+                            </div>
+                            <!-- select.bookmark-select-->
+                            <!--   option 1-Column-->
+                            <!--   option 2-Column-->
+                            <!--   option Static Layout-->
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav float-right">
+                    <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
+                    <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i></a>
+                        <div class="search-input">
+                            <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
+                            <input class="input" type="text" placeholder="Explore Vuexy..." tabindex="-1" data-search="laravel-search-list" />
+                            <div class="search-input-close"><i class="feather icon-x"></i></div>
+                            <ul class="search-list search-list-main"></ul>
+                        </div>
+                    </li>
+                    <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-primary badge-up">5</span></a>
+                        <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                            <li class="dropdown-menu-header">
+                                <div class="dropdown-header m-0 p-2">
+                                    <h3 class="white">5 New</h3><span class="grey darken-2">App Notifications</span>
+                                </div>
+                            </li>
+                            <li class="scrollable-container media-list">
+                                <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                    <div class="media d-flex align-items-start">
+                                        <div class="media-left"><i class="feather icon-plus-square font-medium-5 primary"></i></div>
+                                        <div class="media-body">
+                                            <h6 class="primary media-heading">You have new order!</h6><small class="notification-text"> Are your going to meet me tonight?</small>
+                                        </div><small>
+                                            <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours ago</time></small>
+                                    </div>
+                                </a><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                    <div class="media d-flex align-items-start">
+                                        <div class="media-left"><i class="feather icon-download-cloud font-medium-5 success"></i></div>
+                                        <div class="media-body">
+                                            <h6 class="success media-heading red darken-1">99% Server load</h6><small class="notification-text">You got new order of goods.</small>
+                                        </div><small>
+                                            <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">5 hour ago</time></small>
+                                    </div>
+                                </a><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                    <div class="media d-flex align-items-start">
+                                        <div class="media-left"><i class="feather icon-alert-triangle font-medium-5 danger"></i></div>
+                                        <div class="media-body">
+                                            <h6 class="danger media-heading yellow darken-3">Warning notifixation</h6><small class="notification-text">Server have 99% CPU usage.</small>
+                                        </div><small>
+                                            <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                    </div>
+                                </a><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                    <div class="media d-flex align-items-start">
+                                        <div class="media-left"><i class="feather icon-check-circle font-medium-5 info"></i></div>
+                                        <div class="media-body">
+                                            <h6 class="info media-heading">Complete the task</h6><small class="notification-text">Cake sesame snaps cupcake</small>
+                                        </div><small>
+                                            <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last week</time></small>
+                                    </div>
+                                </a><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                    <div class="media d-flex align-items-start">
+                                        <div class="media-left"><i class="feather icon-file font-medium-5 warning"></i></div>
+                                        <div class="media-body">
+                                            <h6 class="warning media-heading">Generate monthly report</h6><small class="notification-text">Chocolate cake oat cake tiramisu marzipan</small>
+                                        </div><small>
+                                            <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-footer"><a class="dropdown-item p-1 text-center" href="javascript:void(0)">Read all notifications</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                            <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">John Doe</span><span class="user-status">Available</span></div><span><img class="round" src="images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40" /></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="app-email.html"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="feather icon-message-square"></i> Chats</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="auth-login.html"><i class="feather icon-power"></i> Logout</a>
+                            <form id="logout-form" action="https://pixinvent.com/demo/vuexy-bootstrap-laravel-admin-template/demo-4/login" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="CX1hMBTOKNAZp1x4fEHF6ZXr7ym82j9Iyjhr3PWI">                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<ul class="main-search-list-defaultlist d-none">
+    <li class="d-flex align-items-center">
+        <a class="pb-25" href="#">
+            <h6 class="text-primary mb-0">Files</h6>
+        </a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="ml-0 mr-50"><img src="images/icons/xls.png" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small></div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small></a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="ml-0 mr-50"><img src="images/icons/jpg.png" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small></div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small></a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="ml-0 mr-50"><img src="images/icons/pdf.png" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small></div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small></a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between w-100" href="#">
+            <div class="d-flex">
+                <div class="ml-0 mr-50"><img src="images/icons/doc.png" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small></div>
+            </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small></a>
+    </li>
+    <li class="d-flex align-items-center">
+        <a class="pb-25" href="#">
+            <h6 class="text-primary mb-0">Members</h6>
+        </a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="images/portrait/small/avatar-s-8.jpg" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small></div>
+            </div>
+        </a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="images/portrait/small/avatar-s-1.jpg" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small></div>
+            </div>
+        </a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="images/portrait/small/avatar-s-14.jpg" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small></div>
+            </div>
+        </a>
+    </li>
+    <li class="auto-suggestion d-flex align-items-center cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between py-50 w-100" href="#">
+            <div class="d-flex align-items-center">
+                <div class="avatar mr-50"><img src="images/portrait/small/avatar-s-6.jpg" alt="png" height="32" /></div>
+                <div class="search-data">
+                    <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small></div>
+            </div>
+        </a>
+    </li>
+</ul>
+<ul class="main-search-list-defaultlist-other-list d-none">
+    <li class="auto-suggestion d-flex align-items-center justify-content-between cursor-pointer">
+        <a class="d-flex align-items-center justify-content-between w-100 py-50">
+            <div class="d-flex justify-content-start"><span class="mr-75 feather icon-alert-circle"></span><span>No results found.</span></div>
+        </a>
+    </li>
+</ul>
+
+<!-- END: Header-->
+
+                            <div class="content-wrapper">
+                    
+                                            <div class="content-header row">
+    <div class="content-header-left col-md-9 col-12 mb-2">
+        <div class="row breadcrumbs-top">
+            <div class="col-12">
+                <h2 class="content-header-title float-left mb-0">Textarea</h2>
+                <div class="breadcrumb-wrapper col-12">
+                                            <ol class="breadcrumb">
+                            
+                                                            <li class="breadcrumb-item">
+                                                                            <a href="dashboard-analytics.html"> Home </a>
+                                                                    </li>
+                                                            <li class="breadcrumb-item">
+                                                                            <a href="dashboard-analytics.html"> Form Elements </a>
+                                                                    </li>
+                                                            <li class="breadcrumb-item">
+                                    Textarea                                </li>
+                                                    </ol> 
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+        <div class="form-group breadcrum-right">
+            <div class="dropdown">
+                <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
+                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item" href="#">Calendar</a></div>
+            </div>
+        </div>
+    </div>
+</div>                    
+                    <div class="content-body">
+                        
+                        <!-- Basic Textarea start -->
+<section class="basic-textarea">
+  <div class="row">
+      <div class="col-12">
+          <div class="card">
+              <div class="card-header">
+                  <h4 class="card-title">Default</h4>
+              </div>
+              <div class="card-content">
+                  <div class="card-body">
+                      <p>To add a Textarea we have the component <code>textarea</code>.</p>
+                      <div class="row">
+                          <div class="col-12">
+                              <fieldset class="form-group">
+                                  <textarea class="form-control" id="basicTextarea" rows="3" placeholder="Textarea"></textarea>
+                              </fieldset>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Basic Textarea end -->
+
+<!-- Floating Label Textarea start -->
+<section class="floating-label-textarea">
+  <div class="row">
+      <div class="col-12">
+          <div class="card">
+              <div class="card-header">
+                  <h4 class="card-title">Floating Label</h4>
+              </div>
+              <div class="card-content">
+                  <div class="card-body">
+                      <p class="mb-2">Use <code>.form-label-group</code> to add a Floating Label with Textarea.</p>
+                      <div class="row">
+                          <div class="col-12">
+                              <fieldset class="form-label-group">
+                                  <textarea class="form-control" id="label-textarea" rows="3" placeholder="Label in Textarea"></textarea>
+                                  <label for="label-textarea">Label in Textarea</label>
+                              </fieldset>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Floating Label Textarea end -->
+
+<!-- Counter Textarea start -->
+<section class="counter-textarea">
+  <div class="row">
+      <div class="col-12">
+          <div class="card">
+              <div class="card-header">
+                  <h4 class="card-title">Counter</h4>
+              </div>
+              <div class="card-content">
+                  <div class="card-body">
+                      <p class="mb-2">There are times when we need the user to only enter a certain number of characters for it, we have the property counter, the value is a number and determines the maximum. Use <code>.char-textarea</code> with <code>&lt;textarea&gt;</code>tag for counting text-length.</p>
+                      <div class="row">
+                          <div class="col-12">
+                              <fieldset class="form-label-group mb-0">
+                                  <textarea data-length=20 class="form-control char-textarea" id="textarea-counter" rows="3" placeholder="Counter"></textarea>
+                                  <label for="textarea-counter">Counter</label>
+                              </fieldset>
+                              <small class="counter-value float-right"><span class="char-count">0</span> / 20 </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Counter Textarea end -->
+                    </div>
+                </div>
+            
+        </div>
+        <!-- End: Content-->
+
+                    <div class="customizer d-none d-md-block">
+    <a class="customizer-close" href="javascript:void(0)">
+        <i class="feather icon-x"></i>
+    </a>
+    <a class="customizer-toggle" href="javascript:void(0)">
+        <i class="feather icon-settings fa fa-spin fa-fw white"></i>
+    </a>
+    <div class="customizer-content p-2">
+        <h4 class="text-uppercase mb-0">Theme Customizer</h4>
+        <small>Customize & Preview in Real Time</small>
+        <hr>
+        
+        <div id="customizer-theme-colors">
+            <h5>Menu Colors</h5>
+            <ul class="list-inline unstyled-list">
+            <li class="color-box bg-primary selected" data-color="theme-primary"></li>
+            <li class="color-box bg-success" data-color="theme-success"></li>
+            <li class="color-box bg-danger" data-color="theme-danger"></li>
+            <li class="color-box bg-info" data-color="theme-info"></li>
+            <li class="color-box bg-warning" data-color="theme-warning"></li>
+            <li class="color-box bg-dark" data-color="theme-dark"></li>
+            </ul>
+        </div>
+        
+        <hr>
+        
+        <h5 class="mt-1">Theme Layout</h5>
+        <div class="theme-layouts">
+            <div class="d-flex justify-content-start">
+            <div class="mx-50">
+                <fieldset>
+                <div class="vs-radio-con vs-radio-primary">
+                    <input type="radio" name="layoutOptions" value="false" class="layout-name" data-layout="" checked>
+                    <span class="vs-radio">
+                    <span class="vs-radio--border"></span>
+                    <span class="vs-radio--circle"></span>
+                    </span>
+                    <span class="">Light</span>
+                </div>
+                </fieldset>
+            </div>
+            <div class="mx-50">
+                <fieldset>
+                <div class="vs-radio-con vs-radio-primary">
+                    <input type="radio" name="layoutOptions" value="false" class="layout-name" data-layout="dark-layout">
+                    <span class="vs-radio">
+                    <span class="vs-radio--border"></span>
+                    <span class="vs-radio--circle"></span>
+                    </span>
+                    <span class="">Dark</span>
+                </div>
+                </fieldset>
+            </div>
+            <div class="mx-50 semi-dark">
+                <fieldset>
+                <div class="vs-radio-con vs-radio-primary">
+                    <input type="radio" name="layoutOptions" value="false" class="layout-name" data-layout="semi-dark-layout">
+                    <span class="vs-radio">
+                    <span class="vs-radio--border"></span>
+                    <span class="vs-radio--circle"></span>
+                    </span>
+                    <span class="">Semi Dark</span>
+                </div>
+                </fieldset>
+            </div>
+            </div>
+        </div>
+        
+        <hr>
+
+        
+        <div id="collapse-sidebar">
+            <div class="collapse-sidebar d-flex justify-content-between">
+                <div class="collapse-option-title">
+                <h5 class="pt-25">Collapse Sidebar</h5>
+                </div>
+                <div class="collapse-option-switch">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="collapse-sidebar-switch">
+                    <label class="custom-control-label" for="collapse-sidebar-switch"></label>
+                </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+
+        
+        <div id="customizer-navbar-colors">
+            <h5>Navbar Colors</h5>
+            <ul class="list-inline unstyled-list">
+            <li class="color-box bg-white border selected" data-navbar-default=""></li>
+            <li class="color-box bg-primary" data-navbar-color="bg-primary"></li>
+            <li class="color-box bg-success" data-navbar-color="bg-success"></li>
+            <li class="color-box bg-danger" data-navbar-color="bg-danger"></li>
+            <li class="color-box bg-info" data-navbar-color="bg-info"></li>
+            <li class="color-box bg-warning" data-navbar-color="bg-warning"></li>
+            <li class="color-box bg-dark" data-navbar-color="bg-dark"></li>
+            </ul>
+            <hr>
+        </div>
+        
+        
+        <div id="navbar-type">
+            <h5 class="navbar_type">Navbar Type</h5>
+            <h5 class="menu_type d-none">Menu Type</h5>
+            <div class="navbar-type d-flex justify-content-between">
+                <div class="mx-50">
+                <fieldset>
+                    <div class="vs-radio-con vs-radio-primary">
+                    <input type="radio" name="navbarType" value="false" id="navbar-hidden">
+                    <span class="vs-radio">
+                        <span class="vs-radio--border"></span>
+                        <span class="vs-radio--circle"></span>
+                    </span>
+                    <span class="">Hidden</span>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="mx-50">
+                <fieldset>
+                    <div class="vs-radio-con vs-radio-primary">
+                    <input type="radio" name="navbarType" value="false" id="navbar-static">
+                    <span class="vs-radio">
+                        <span class="vs-radio--border"></span>
+                        <span class="vs-radio--circle"></span>
+                    </span>
+                    <span class="">Static</span>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="mx-50">
+                <fieldset>
+                    <div class="vs-radio-con vs-radio-primary">
+                    <input type="radio" name="navbarType" value="false" id="navbar-sticky">
+                    <span class="vs-radio">
+                        <span class="vs-radio--border"></span>
+                        <span class="vs-radio--circle"></span>
+                    </span>
+                    <span class="">Sticky</span>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="mx-50">
+                <fieldset>
+                    <div class="vs-radio-con vs-radio-primary">
+                    <input type="radio" name="navbarType" value="false" id="navbar-floating" checked>
+                    <span class="vs-radio">
+                        <span class="vs-radio--border"></span>
+                        <span class="vs-radio--circle"></span>
+                    </span>
+                    <span class="">Floating</span>
+                    </div>
+                </fieldset>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+
+        
+        <h5>Footer Type</h5>
+        <div class="footer-type d-flex justify-content-start">
+            <div class="mx-50">
+            <fieldset>
+                <div class="vs-radio-con vs-radio-primary">
+                <input type="radio" name="footerType" value="false" id="footer-hidden">
+                <span class="vs-radio">
+                    <span class="vs-radio--border"></span>
+                    <span class="vs-radio--circle"></span>
+                </span>
+                <span class="">Hidden</span>
+                </div>
+            </fieldset>
+            </div>
+            <div class="mx-50">
+            <fieldset>
+                <div class="vs-radio-con vs-radio-primary">
+                <input type="radio" name="footerType" value="false" id="footer-static" checked>
+                <span class="vs-radio">
+                    <span class="vs-radio--border"></span>
+                    <span class="vs-radio--circle"></span>
+                </span>
+                <span class="">Static</span>
+                </div>
+            </fieldset>
+            </div>
+            <div class="mx-50">
+            <fieldset>
+                <div class="vs-radio-con vs-radio-primary">
+                <input type="radio" name="footerType" value="false" id="footer-sticky">
+                <span class="vs-radio">
+                    <span class="vs-radio--border"></span>
+                    <span class="vs-radio--circle"></span>
+                </span>
+                <span class="">Sticky</span>
+                </div>
+            </fieldset>
+            </div>
+        </div>
+        
+        <hr>
+
+        
+        <div class="hide-scroll-to-top d-flex justify-content-between py-25">
+            <div class="hide-scroll-title">
+            <h5 class="pt-25">Hide Scroll To Top</h5>
+            </div>
+            <div class="hide-scroll-top-switch">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="hide-scroll-top-switch">
+                <label class="custom-control-label" for="hide-scroll-top-switch"></label>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+            <div class="buy-now">
+    <a href="https://1.envato.market/vuexy_admin" target="_blank" class="btn btn-danger">Buy Now</a>
+</div>
+
+        
+        <div class="sidenav-overlay"></div>
+        <div class="drag-target"></div>
+
+        
+        <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+    <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2019<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span>
+        <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
+    </p>
+</footer>
+<!-- END: Footer-->
+
+        
+        <script src="vendors/js/vendors.min61c9.js?id=0eef70ca571453be304a"></script>
+        <script src="vendors/js/ui/prism.minb678.js?id=fde910813cf7141eae50"></script>
+                
+        <script src="js/core/app-menu3881.js?id=f2d50706b9e71eaa130f"></script>
+        <script src="js/core/app13d8.js?id=ff431fb6d48449d357e3"></script>
+        <script src="js/scripts/componentsf530.js?id=2ab188ae0fa7b622cdb1"></script>
+        <script src="js/scripts/customizerecd2.js?id=bd6e1f733770a42402a7"></script>
+        <script src="js/scripts/footerc918.js?id=b382ec364916c35eff84"></script>
+        
+                
+
+    </body>
+
+<!-- Mirrored from pixinvent.com/demo/vuexy-bootstrap-laravel-admin-template/demo-4/form-textarea by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Jun 2020 13:04:53 GMT -->
+</html>

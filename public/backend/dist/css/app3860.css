@@ -6490,7 +6490,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .table {
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .table th {
