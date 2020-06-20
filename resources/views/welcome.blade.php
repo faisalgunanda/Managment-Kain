@@ -48,7 +48,7 @@
                                       <p class="px-2">Welcome back, please login to your account.</p>
                                       <div class="card-content">
                                           <div class="card-body pt-1">
-                                              <form action="{{route('login')}}">
+                                              <form method="POST" action="{{route('login')}}">
                                                 @csrf
                                                 <fieldset class="form-label-group form-group position-relative has-icon-left">
                                                   <input type="email" name="email" class="form-control" id="email" placeholder="Email" required autocomplete="off">
@@ -59,7 +59,7 @@
                                               </fieldset>
 
                                               <fieldset class="form-label-group position-relative has-icon-left">
-                                                  <input type="password" class="form-control" id="user-password" placeholder="Password" required>
+                                                  <input type="password" class="form-control" name="password" id="user-password" placeholder="Password" required>
                                                   <div class="form-control-position">
                                                       <i class="feather icon-lock"></i>
                                                   </div>

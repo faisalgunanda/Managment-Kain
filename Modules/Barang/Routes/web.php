@@ -12,5 +12,11 @@
 */
 
 Route::prefix('barang')->group(function() {
-    Route::get('/', 'BarangController@index');
+    Route::get('/', 'BarangController@index')->name('barang.index');
+    Route::get('/create', 'BarangController@create')->name('barang.create');
+    Route::post('/store', 'BarangController@store')->name('barang.store');
+    Route::get('/show', 'BarangController@show')->name('barang.show');
+    Route::get('/edit/{id}', 'BarangController@edit');
+    Route::post('/update/{id}', 'BarangController@update')->name('barang.update');
+    Route::get('/delete/{id}', 'BarangController@destroy');
 });
