@@ -9,7 +9,7 @@
     <div class="breadcrumb-wrapper col-12">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="{{url('/admin')}}"> Dashboard </a>
+          <a href="{{url('/home')}}"> Dashboard </a>
         </li>
         <li class="breadcrumb-item">
           <a href="{{url('/barang')}}"> Data Barang</a>
@@ -17,7 +17,7 @@
         <li class="breadcrumb-item">
           Tambah Barang Baru
         </li>
-      </ol> 
+      </ol>
     </div>
   </div>
 </div>
@@ -64,7 +64,7 @@
                       <div class="col-4">
                         <div class="form-group">
                           <label for="panjang">Panjang</label>
-                          <input type="number" id="panjang" class="form-control" name="panjang" placeholder="Panjang">
+                          <input type="text" id="panjang" class="form-control" name="panjang" placeholder="Panjang">
                         </div>
                       </div>
                       <div class="col-4">

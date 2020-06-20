@@ -16,7 +16,9 @@ class CreatePenjualansTable extends Migration
         Schema::create('penjualans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('kode_barang');
-            $table->double('panjang_terjual');
+            $table->string('nama_barang');
+            $table->string('panjang_terjual');
+            $table->enum('satuan', ['Meter', 'Yard']);
             $table->integer('harga_jual');
             $table->timestamps();
         });

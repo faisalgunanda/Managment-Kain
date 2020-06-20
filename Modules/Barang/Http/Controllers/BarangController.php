@@ -9,6 +9,10 @@ use DB;
 
 class BarangController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      * @return Response
@@ -46,7 +50,7 @@ class BarangController extends Controller
             "modal" => $request->modal,
         ]);
 
-        return redirect()->route('barang.index')->with('success', 'Berhasil Menambahkan Data!');;
+        return redirect()->route('barang.index')->with('success', 'Berhasil Menambahkan Data!');
     }
 
     /**

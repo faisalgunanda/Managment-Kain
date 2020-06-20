@@ -5,7 +5,8 @@ namespace Modules\Penjualan\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-
+use DB;
+use Carbon\Carbon;
 class PenjualanController extends Controller
 {
     /**
@@ -23,7 +24,8 @@ class PenjualanController extends Controller
      */
     public function create()
     {
-        return view('penjualan::create');
+        $databarang = DB::table('barangs')->select('kode_barang')->get();
+        return view('penjualan::create', ["databarang" => $databarang]);
     }
 
     /**
@@ -33,7 +35,20 @@ class PenjualanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());
+        $create = DB::table('penjualans')->insert([
+            "kode_barang" => $request->kode_barang,
+            "nama_barang" => $request->nama_barang,
+            "panjang_terjual" => $request->panjang_terjual,
+            "harga_jual" => $request->harga_jual,
+            "created_at" => Carbon::now(),
+        ]);
+        $datastock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('stock_tersisa')->first();
+        $updatestock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->update([
+            "stock_tersisa" => $datastock->stock_tersisa - 1,
+        ]);
+
+        return redirect()->route('penjualan.index')->with('success', 'Berhasil Menambahkan Data!');
     }
 
     /**
@@ -41,9 +56,24 @@ class PenjualanController extends Controller
      * @param int $id
      * @return Response
      */
-    public function show($id)
+    public function show()
     {
-        return view('penjualan::show');
+        $get = DB::table('penjualans')->orderBy('id', 'ASC')->get();
+
+        return Datatables()->of($get)
+        ->addcolumn('harga_jual', function($get){
+            $harga_beli = "Rp. " . number_format($get->harga_jual,0,',','.');
+
+            return $harga_beli;
+        })
+        ->addcolumn('action', function($get){
+
+            return '<a href="/penjualan/edit/'.$get->id.'" class="action-edit" title="Edit Data"><i class="feather icon-edit"></i></a>
+            <a href="/penjualan/delete/'.$get->id.'" class="action-delete" id="delete-penjualan" title="Hapus Data"><i class="feather icon-trash"></i></a>';
+        })
+        ->rawColumns(['harga_jual', 'action'])
+        ->make(true);
+        // return view('penjualan::show');
     }
 
     /**
@@ -53,7 +83,9 @@ class PenjualanController extends Controller
      */
     public function edit($id)
     {
-        return view('penjualan::edit');
+        $data = DB::table('penjualans')->where('id', $id)->first();
+        $databarang = DB::table('barangs')->select('kode_barang')->get();
+        return view('penjualan::edit', ["data" => $data, "databarang" => $databarang]);
     }
 
     /**
@@ -64,7 +96,14 @@ class PenjualanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $update = DB::table('penjualans')->where('id', $id)->update([
+            "kode_barang" => $request->kode_barang,
+            "nama_barang" => $request->nama_barang,
+            "panjang_terjual" => $request->panjang_terjual,
+            "harga_jual" => $request->harga_jual,
+        ]);
+
+        return redirect()->route('penjualan.index');
     }
 
     /**
@@ -74,6 +113,16 @@ class PenjualanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $delete = DB::table('penjualans')->where('id', $id)->delete();
+
+        return redirect()->route('penjualan.index');
+
+    }
+
+    public function getnamabarang(Request $request)
+    {
+        $name = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('nama_barang')->first();
+
+        return $name->nama_barang;
     }
 }

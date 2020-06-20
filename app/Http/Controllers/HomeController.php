@@ -28,8 +28,9 @@ class HomeController extends Controller
         $today = Carbon::now()->format('Y-m-d');
         $penjualans = DB::table('penjualans')->select('harga_jual');
         $totalmodal = DB::table('barangs')->select('modal')->get()->sum();
-        $data_penjualan_hari_ini = $penjualans->where('created_at', $today)->get()->sum();
-        $total_penjualan = $penjualans->get()->sum();
+        $data_penjualan_hari_ini = DB::table('penjualans')->whereDate('created_at', $today)->select('harga_jual')->get()->sum('harga_jual');
+        // dd($today, $data_penjualan_hari_ini, DB::table('penjualans')->whereDate('created_at', $today)->select('harga_jual')->get(), DB::table('penjualans')->select('harga_jual')->get());
+        $total_penjualan = $penjualans->get()->sum('harga_jual');
         $data = array(
             "data_hari_ini" => $this->number_rupiah_format($data_penjualan_hari_ini),
             "total" => $this->number_rupiah_format($total_penjualan),

@@ -10,12 +10,12 @@
     <div class="breadcrumb-wrapper col-12">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="{{url('/admin')}}"> Dashboard </a>
+          <a href="{{url('/home')}}"> Dashboard </a>
         </li>
         <li class="breadcrumb-item">
           Data Barang
         </li>
-      </ol> 
+      </ol>
     </div>
   </div>
 </div>

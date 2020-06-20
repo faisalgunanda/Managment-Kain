@@ -19,7 +19,7 @@ class CreateBarangsTable extends Migration
             $table->string('kode_barang');
             $table->integer('harga_beli');
             $table->integer('harga_jual');
-            $table->integer('panjang');
+            $table->string('panjang');
             $table->enum('satuan', ['Meter', 'Yard']);
             $table->integer('stock_awal');
             $table->integer('stock_tersisa');
