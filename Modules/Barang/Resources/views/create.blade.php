@@ -34,7 +34,7 @@
             <form class="form form-vertical" method="POST" action="{{route('barang.store')}}">
               <div class="form-body">
                 <div class="row">
-                  <div class="row">
+                  {{-- <div class="row"> --}}
                       @method('POST')
                       @csrf
                       <div class="col-12">
@@ -93,7 +93,7 @@
                         <button type="submit" class="btn btn-primary mr-1 mb-1">Tambah</button>
                         {{-- <button type="reset" class="btn btn-outline-warning mr-1 mb-1">Reset</button> --}}
                     </div>
-                  </div>
+                  {{-- </div> --}}
                 </div>
               </form>
             </div>

@@ -46,6 +46,7 @@ class PenjualanController extends Controller
             "nama_barang" => $request->nama_barang,
             "panjang_terjual" => $request->panjang_terjual,
             "harga_jual" => $request->harga_jual,
+            "satuan" => $request->satuan,
             "created_at" => Carbon::now(),
         ]);
         $datastock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('stock_tersisa')->first();
