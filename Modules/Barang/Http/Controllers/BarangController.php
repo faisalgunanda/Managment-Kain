@@ -81,7 +81,7 @@ class BarangController extends Controller
         ->addcolumn('action', function($get){
 
             return '<a href="/barang/edit/'.$get->id.'" class="action-edit" title="Edit Data"><i class="feather icon-edit"></i></a>
-                <a href="/barang/delete/'.$get->id.'" class="action-delete" id="delete-barang" title="Hapus Data"><i class="feather icon-trash"></i></a>';
+                <a href="#" data-url="/barang/delete/'.$get->id.'" class="action-delete" id="delete-barang" title="Hapus Data"><i class="feather icon-trash"></i></a>';
         })
         ->rawColumns(['harga_beli', 'harga_jual', 'modal', 'action'])
         ->make(true);

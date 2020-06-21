@@ -90,7 +90,7 @@
       ]
     });
     $(document).on('click', '#delete-barang', function(e){
-      const url = $(this).attr('href');
+      const url = $(this).attr('data-url');
       Swal.fire({
         title: "Apakah kamu yakin ingin menghapus data ini?",
         text: "Anda tidak akan dapat mengembalikan data ini!",
@@ -103,8 +103,8 @@
         cancelButtonClass: "btn btn-danger ml-1",
         buttonsStyling: !1,
       }).then(function (t) {
-        if(t){
-          window.location.url = url;
+        if(t.value){
+          window.location.href = url;
         }
       });
     });

@@ -5,17 +5,17 @@
 @section('content')
 <div class="row breadcrumbs-top">
   <div class="col-12">
-    <h2 class="content-header-title float-left mb-0">Tambah Data Barang</h2>
+    <h2 class="content-header-title float-left mb-0">Edit Data Penjualan</h2>
     <div class="breadcrumb-wrapper col-12">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="{{url('/home')}}"> Dashboard </a>
         </li>
         <li class="breadcrumb-item">
-          <a href="{{url('/penjualan')}}"> Data Barang</a>
+          <a href="{{url('/penjualan')}}"> Data Penjualan</a>
         </li>
         <li class="breadcrumb-item">
-          Tambah Penjualan Baru
+          Edit Data Penjualan
         </li>
       </ol>
     </div>
@@ -27,7 +27,7 @@
     <div class="col-md-6 col-12">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Tambah Data Penjualan</h4>
+          <h4 class="card-title">Edit Data Penjualan</h4>
         </div>
         <div class="card-content">
           <div class="card-body">

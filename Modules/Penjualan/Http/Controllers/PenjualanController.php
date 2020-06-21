@@ -75,7 +75,7 @@ class PenjualanController extends Controller
         ->addcolumn('action', function($get){
 
             return '<a href="/penjualan/edit/'.$get->id.'" class="action-edit" title="Edit Data"><i class="feather icon-edit"></i></a>
-            <a href="/penjualan/delete/'.$get->id.'" class="action-delete" id="delete-penjualan" title="Hapus Data"><i class="feather icon-trash"></i></a>';
+            <a href="#" data-url="/penjualan/delete/'.$get->id.'" class="action-delete" id="delete-penjualan" title="Hapus Data"><i class="feather icon-trash"></i></a>';
         })
         ->rawColumns(['harga_jual', 'action'])
         ->make(true);

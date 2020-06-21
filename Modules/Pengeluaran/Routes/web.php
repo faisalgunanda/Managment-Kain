@@ -12,5 +12,11 @@
 */
 
 Route::prefix('pengeluaran')->group(function() {
-    Route::get('/', 'PengeluaranController@index');
+    Route::get('/', 'PengeluaranController@index')->name('pengeluaran.index');
+    Route::get('/create', 'PengeluaranController@create')->name('pengeluaran.create');
+    Route::post('/store', 'PengeluaranController@store')->name('pengeluaran.store');
+    Route::get('/show', 'PengeluaranController@show')->name('pengeluaran.show');
+    Route::get('/edit/{id}', 'PengeluaranController@edit');
+    Route::post('/update/{id}', 'PengeluaranController@update')->name('pengeluaran.update');
+    Route::get('/delete/{id}', 'PengeluaranController@destroy');
 });
