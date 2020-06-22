@@ -30,12 +30,13 @@ class HomeController extends Controller
         $penjualans = DB::table('penjualans')->select('harga_jual');
         $totalmodal = DB::table('barangs')->select('modal')->get()->sum();
         $data_penjualan_hari_ini = DB::table('penjualans')->whereDate('created_at', $today)->select('harga_jual')->get()->sum('harga_jual');
-        // dd($today, $data_penjualan_hari_ini, DB::table('penjualans')->whereDate('created_at', $today)->select('harga_jual')->get(), DB::table('penjualans')->select('harga_jual')->get());
+        $data_pengeluaran_hari_ini = DB::table('pengeluarans')->whereDate('created_at', $today)->select('jumlah_pengeluaran')->get()->sum('jumlah_pengeluaran');
         $total_penjualan = $penjualans->get()->sum('harga_jual');
         $data = array(
             "data_hari_ini" => $this->number_rupiah_format($data_penjualan_hari_ini),
             "total" => $this->number_rupiah_format($total_penjualan),
             "modal" => $this->number_rupiah_format($totalmodal - $total_penjualan),
+            "data_pengeluaran_hari_ini" => $this->number_rupiah_format($data_pengeluaran_hari_ini),
 
         );
 

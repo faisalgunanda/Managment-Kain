@@ -48,7 +48,7 @@
 						<i class="feather icon-shopping-cart text-primary font-medium-5"></i>
 					</div>
 				</div>
-				<h2 class="text-bold-700 mt-1 mb-25">0</h2>
+				<h2 class="text-bold-700 mt-1 mb-25">{{$data_pengeluaran_hari_ini}}</h2>
 				<p class="mb-0">Total Pengeluaran Hari Ini</p>
 			</div>
 		</div>
