@@ -20,4 +20,5 @@ Route::prefix('penjualan')->group(function() {
     Route::post('/update/{id}', 'PenjualanController@update')->name('penjualan.update');
     Route::get('/delete/{id}', 'PenjualanController@destroy');
     Route::get('/getnamabarang', 'PenjualanController@getnamabarang')->name('penjualan.getnamabarang');
+    Route::get('/getkodebarang', 'PenjualanController@getkodebarang')->name('penjualan.getkodebarang');
 });

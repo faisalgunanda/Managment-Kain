@@ -108,6 +108,10 @@ class PenjualanController extends Controller
             "panjang_terjual" => $request->panjang_terjual,
             "harga_jual" => $request->harga_jual,
         ]);
+        $datastock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('stock_tersisa')->first();
+        $updatestock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->update([
+            "stock_tersisa" => $datastock->stock_tersisa + 1,
+        ]);
 
         return redirect()->route('penjualan.index');
     }
@@ -130,5 +134,12 @@ class PenjualanController extends Controller
         $name = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('nama_barang')->first();
 
         return $name->nama_barang;
+    }
+
+    public function getkodebarang()
+    {
+        $databarang = DB::table('barangs')->select('kode_barang')->get();
+
+        return response()->json($databarang);
     }
 }
