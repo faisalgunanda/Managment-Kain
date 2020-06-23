@@ -75,7 +75,7 @@ class PenjualanController extends Controller
         ->addcolumn('action', function($get){
 
             return '<a href="/penjualan/edit/'.$get->id.'" class="action-edit" title="Edit Data"><i class="feather icon-edit"></i></a>
-            <a href="#" data-url="/penjualan/delete/'.$get->id.'" class="action-delete" id="delete-penjualan" title="Hapus Data"><i class="feather icon-trash"></i></a>';
+            <a href="#" data-url="/penjualan/delete/'.$get->id.'?kode_barang='.$get->kode_barang.'" class="action-delete" id="delete-penjualan" title="Hapus Data"><i class="feather icon-trash"></i></a>';
         })
         ->rawColumns(['harga_jual', 'action'])
         ->make(true);
@@ -108,10 +108,6 @@ class PenjualanController extends Controller
             "panjang_terjual" => $request->panjang_terjual,
             "harga_jual" => $request->harga_jual,
         ]);
-        $datastock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('stock_tersisa')->first();
-        $updatestock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->update([
-            "stock_tersisa" => $datastock->stock_tersisa + 1,
-        ]);
 
         return redirect()->route('penjualan.index');
     }
@@ -121,9 +117,13 @@ class PenjualanController extends Controller
      * @param int $id
      * @return Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
         $delete = DB::table('penjualans')->where('id', $id)->delete();
+        $datastock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('stock_tersisa')->first();
+        $updatestock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->update([
+            "stock_tersisa" => $datastock->stock_tersisa + 1,
+        ]);
 
         return redirect()->route('penjualan.index');
 
