@@ -40,19 +40,23 @@ class PenjualanController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
-        $create = DB::table('penjualans')->insert([
-            "kode_barang" => $request->kode_barang,
-            "nama_barang" => $request->nama_barang,
-            "panjang_terjual" => $request->panjang_terjual,
-            "harga_jual" => $request->harga_jual,
-            "satuan" => $request->satuan,
-            "created_at" => Carbon::now(),
-        ]);
-        $datastock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->select('stock_tersisa')->first();
-        $updatestock = DB::table('barangs')->where('kode_barang', $request->kode_barang)->update([
-            "stock_tersisa" => $datastock->stock_tersisa - 1,
-        ]);
+        $inputs = $request->except('_method', '_token');
+        $condition = $inputs['kode_barang'];
+        foreach ($condition as $key => $value) {
+            $create = DB::table('penjualans')->insert([
+                "kode_barang" => $request->kode_barang[$key],
+                "nama_barang" => $request->nama_barang[$key],
+                "panjang_terjual" => $request->panjang_terjual[$key],
+                "harga_jual" => $request->harga_jual[$key],
+                "satuan" => $request->satuan[$key],
+                "created_at" => Carbon::now(),
+            ]);
+            $datastock = DB::table('barangs')->where('kode_barang', $request->kode_barang[$key])->select('stock_tersisa')->first();
+            // dd($datastock);
+            $updatestock = DB::table('barangs')->where('kode_barang', $request->kode_barang[$key])->update([
+                "stock_tersisa" => $datastock->stock_tersisa - 1,
+            ]);
+        }
 
         return redirect()->route('penjualan.index')->with('success', 'Berhasil Menambahkan Data!');
     }
